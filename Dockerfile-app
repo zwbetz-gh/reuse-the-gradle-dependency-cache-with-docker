@@ -1,0 +1,5 @@
+FROM gradle:7.0.2-jdk11-hotspot
+WORKDIR /app
+COPY ./ ./
+RUN gradle clean build --no-daemon
+CMD java -jar build/libs/*.jar

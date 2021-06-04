@@ -1,0 +1,7 @@
+FROM gradle:7.0.2-jdk11-hotspot as builder
+WORKDIR /app
+COPY ./ ./
+RUN gradle clean build --no-daemon
+
+FROM gradle:7.0.2-jdk11-hotspot
+COPY --from=builder /root/.gradle /root/.gradle
