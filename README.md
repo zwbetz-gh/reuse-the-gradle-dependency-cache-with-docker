@@ -2,7 +2,7 @@
 
 ## Sister Links
 
-Article: TODO
+- Article: <https://zwbetz.com/reuse-the-gradle-dependency-cache-with-docker/>
 
 ## Setup
 
